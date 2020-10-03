@@ -6,10 +6,9 @@
 import scrapy
 
 
-class BbcCrawlerItem(scrapy.Item):
+class BBCNewsItem(scrapy.Item):
     # Define fields of BBC news items
     title = scrapy.Field()
     summary = scrapy.Field()
-    tag = scrapy.Field()
+    body = scrapy.Field()
     url = scrapy.Field()
-    date_str = scrapy.Field()
